@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NServiceKit.Redis</id>
+    <version>1.0.7</version>
+    <title>C# Redis client for the Redis NoSQL DB</title>
+    <authors>NServiceKit</authors>
+    <owners>NServiceKit</owners>
+    <licenseUrl>https://github.com/NServiceKit/NServiceKit.Redis/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/NServiceKit/NServiceKit.Redis</projectUrl>
+    <iconUrl>http://www.nservicekit.net/logo-100x100.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Free and Open Source fork of NServiceKit.Redis V3
+      C# Redis Client for the worlds fastest distributed NoSQL datastore. Byte[], String and POCO Typed clients.
+      Thread-Safe Basic and Pooled client managers included.</description>
+    <copyright>NServiceKit 2014 and contributors</copyright>
+    <language>en-US</language>
+    <tags>Redis NoSQL Client Distributed Cache PubSub Messaging Transactions</tags>
+    <dependencies>
+      <dependency id="NServiceKit.Common" version="[1.0, 2.0)" />
+      <dependency id="NServiceKit.Text" version="[1.0, 2.0)" />
+    </dependencies>
+  </metadata>
+</package>

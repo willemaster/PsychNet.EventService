@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NServiceKit.Common</id>
+    <version>1.0.11</version>
+    <title>Service Clients and Common libs for NServiceKit projects</title>
+    <authors>NServiceKit</authors>
+    <owners>NServiceKit</owners>
+    <licenseUrl>https://github.com/NServiceKit/NServiceKit/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/NServiceKit/NServiceKit</projectUrl>
+    <iconUrl>http://www.nservicekit.com/logo-100x100.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Free and Open Source fork of ServiceStack.Common V3
+      Common library dependency for other NServiceKit projects.
+      Includes JSON, XML, JSV and SOAP Generic Service Clients.
+      Contains:
+      - NServiceKit.Interfaces
+      - NServiceKit.Common
+      Dependencies:
+      - NServiceKit.Text</description>
+    <summary>Free and open source .NET and Mono REST Services framework</summary>
+    <copyright>NServiceKit 2014 and contributors</copyright>
+    <language>en-US</language>
+    <tags>NServiceKit Common Framework Clients ServiceClients Gateway ServiceStack</tags>
+    <dependencies>
+      <dependency id="NServiceKit.Text" version="[1.0, 2.0)" />
+    </dependencies>
+  </metadata>
+</package>
