@@ -1,4 +1,0 @@
-PsychNet.EventService
-=====================
-
-PsychNet.EventService
