@@ -4,6 +4,7 @@ using System.IO;
 using System.Net;
 using System.Reflection;
 using System.Security.AccessControl;
+using System.Threading;
 using System.Xml;
 using System.Xml.Serialization;
 using Castle.Core.Logging;
@@ -149,6 +150,8 @@ namespace PsychNet.EventService
     {
         readonly ICommandSender _commandSender;
         private Castle.Core.Logging.ILogger logger = NullLogger.Instance;
+        ActionableQueue[] _allAqs;
+        static Timer _timer;
 
         public Castle.Core.Logging.ILogger Logger
         {
@@ -189,55 +192,55 @@ namespace PsychNet.EventService
                 Action = () => _commandSender.Send(new ClearAllCaches())
             };
 
+            _allAqs = new[] {reminderNotificationAq, cacheMaintenanceAq };
 
-            var allAqs = new[] {reminderNotificationAq, cacheMaintenanceAq };
-
-            while (true)
-            {
-                foreach (var aq in allAqs)
-                {
-                    aq.Queue.FetchAttributes();
-
-                    var count = aq.Queue.ApproximateMessageCount;
-
-                    if (count > 0)
-                    {
-                        try
-                        {
-                            var message = aq.Queue.GetMessage();
-                            if (message != null)
-                            {
-                                Logger.InfoFormat("Got message: {0}", message.AsString);
-
-                                aq.Action();
-
-                                aq.Queue.DeleteMessage(message);
-                            }
-                        }
-                        catch (StorageException e)
-                        {
-                            //log error
-                        }
-                        catch (Exception e)
-                        {
-                            //log error
-                        }
-
-                    }
-                    else
-                    {
-                        Logger.DebugFormat("No messages found for queue {0}.", aq.Queue.Name);
-                    }
-                }
-
-                Logger.Debug("Waiting...");
-                System.Threading.Thread.Sleep(new TimeSpan(0, 0, 0, 30));
-            }
+            _timer = new Timer(_ => OnCallBack(), null, 0, 1000*30);
         }
 
         public void Stop()
         {
             Console.WriteLine("Stopping the service ...");
+        }
+
+        public void OnCallBack()
+        {
+            foreach (var aq in _allAqs)
+            {
+                aq.Queue.FetchAttributes();
+
+                var count = aq.Queue.ApproximateMessageCount;
+
+                if (count > 0)
+                {
+                    try
+                    {
+                        var message = aq.Queue.GetMessage();
+                        if (message != null)
+                        {
+                            Logger.InfoFormat("Got message: {0}", message.AsString);
+
+                            aq.Action();
+
+                            aq.Queue.DeleteMessage(message);
+                        }
+                    }
+                    catch (StorageException e)
+                    {
+                        //log error
+                    }
+                    catch (Exception e)
+                    {
+                        //log error
+                    }
+
+                }
+                else
+                {
+                    Logger.DebugFormat("No messages found for queue {0}.", aq.Queue.Name);
+                }
+            }
+
+            Logger.Debug("Waiting...");
         }
     }
 
