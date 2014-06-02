@@ -101,6 +101,10 @@
     <Reference Include="NServiceKit.Text">
       <HintPath>..\packages\NServiceKit.Text.1.0.10\lib\net35\NServiceKit.Text.dll</HintPath>
     </Reference>
+    <Reference Include="PsychNet.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\PsychNet.Core.1.0.0.44\lib\net45\PsychNet.Core.dll</HintPath>
+    </Reference>
     <Reference Include="PsychNet.CQRS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\PsychNet.CQRS.1.0.0.44\lib\net45\PsychNet.CQRS.dll</HintPath>
