@@ -226,11 +226,11 @@ namespace PsychNet.EventService
                     }
                     catch (StorageException e)
                     {
-                        //log error
+                        Logger.WarnFormat(e.Message);
                     }
                     catch (Exception e)
                     {
-                        //log error
+                        Logger.WarnFormat(e.Message);
                     }
 
                 }
