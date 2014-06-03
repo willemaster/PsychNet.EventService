@@ -226,7 +226,7 @@ namespace PsychNet.EventService
                     }
                     catch (StorageException e)
                     {
-                        Logger.WarnFormat(e.Message);
+                        Logger.WarnFormat("Error sending ", e.Message);
                     }
                     catch (Exception e)
                     {

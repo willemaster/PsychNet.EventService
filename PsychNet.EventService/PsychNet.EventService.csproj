@@ -103,23 +103,23 @@
     </Reference>
     <Reference Include="PsychNet.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\PsychNet.Core.1.0.0.44\lib\net45\PsychNet.Core.dll</HintPath>
+      <HintPath>..\packages\PsychNet.Core.1.0.0.47\lib\net45\PsychNet.Core.dll</HintPath>
     </Reference>
-    <Reference Include="PsychNet.CQRS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="PsychNet.CQRS, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\PsychNet.CQRS.1.0.0.44\lib\net45\PsychNet.CQRS.dll</HintPath>
+      <HintPath>..\packages\PsychNet.CQRS.1.0.0.47\lib\net45\PsychNet.CQRS.dll</HintPath>
     </Reference>
     <Reference Include="PsychNet.Domain, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\PsychNet.Domain.1.0.0.44\lib\net45\PsychNet.Domain.dll</HintPath>
+      <HintPath>..\packages\PsychNet.Domain.1.0.0.47\lib\net45\PsychNet.Domain.dll</HintPath>
     </Reference>
     <Reference Include="PsychNet.Notifier, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\PsychNet.Notifier.1.0.0.44\lib\net45\PsychNet.Notifier.dll</HintPath>
+      <HintPath>..\packages\PsychNet.Notifier.1.0.0.47\lib\net45\PsychNet.Notifier.dll</HintPath>
     </Reference>
     <Reference Include="PsychNet.Utilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\PsychNet.Utilities.1.0.0.44\lib\net45\PsychNet.Utilities.dll</HintPath>
+      <HintPath>..\packages\PsychNet.Utilities.1.0.0.47\lib\net45\PsychNet.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="RazorEngine">
       <HintPath>..\packages\RazorEngine.3.4.1\lib\net45\RazorEngine.dll</HintPath>
