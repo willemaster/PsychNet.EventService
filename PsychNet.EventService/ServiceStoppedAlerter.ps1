@@ -4,7 +4,7 @@
     #>
  
 # Get the state of any services starting IBM* from computer Server1
-$service = Get-WmiObject win32_service -computername YOGA | select name,state | where { $_.name -like "PsychNet*"} | out-string
+$service = Get-WmiObject win32_service | select name,state | where { $_.name -like "PsychNet*"} | out-string
 # Specify a sender email address
 $emailFrom = "ops@sessionbase.com"
 # Specify a recipient email address
