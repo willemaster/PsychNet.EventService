@@ -10,7 +10,7 @@ $emailFrom = "ops@sessionbase.com"
 # Specify a recipient email address
 $emailTo = "will.master@gmail.com"
 # Put in a subject line
-$subject = "Sessionbase Service Alert"
+$subject = "Sessionbase Service Alert:" + $env:COMPUTERNAME
 # Add the Service state from line 6 to some body text
 $body = $service 
 # Put the DNS name or IP address of your SMTP Server
