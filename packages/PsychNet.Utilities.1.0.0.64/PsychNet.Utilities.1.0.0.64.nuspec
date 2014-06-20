@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>PsychNet.Domain</id>
-    <version>1.0.0.47</version>
-    <title>PsychNet.Domain</title>
+    <id>PsychNet.Utilities</id>
+    <version>1.0.0.64</version>
+    <title>PsychNet.Utilities</title>
     <authors>Administrator</authors>
     <owners>Administrator</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -12,8 +12,5 @@
     <releaseNotes />
     <copyright>Copyright © 2014</copyright>
     <language />
-    <dependencies>
-      <dependency id="Newtonsoft.Json" version="6.0.1" />
-    </dependencies>
   </metadata>
 </package>

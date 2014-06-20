@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>PsychNet.Notifier</id>
-    <version>1.0.0.47</version>
-    <title>PsychNet.Notifier</title>
+    <id>PsychNet.Core</id>
+    <version>1.0.0.64</version>
+    <title>PsychNet.Core</title>
     <authors>Administrator</authors>
     <owners>Administrator</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -12,10 +12,5 @@
     <releaseNotes />
     <copyright>Copyright © 2014</copyright>
     <language />
-    <dependencies>
-      <dependency id="Castle.Core" version="3.2.2" />
-      <dependency id="RazorEngine" version="3.4.1" />
-      <dependency id="Twilio" version="3.6.11" />
-    </dependencies>
   </metadata>
 </package>
