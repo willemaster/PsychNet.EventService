@@ -221,7 +221,7 @@ namespace PsychNet.EventService
 
                             aq.Action();
 
-                            aq.Queue.DeleteMessage(message);
+                            aq.Queue.Clear();
                         }
                     }
                     catch (StorageException e)
