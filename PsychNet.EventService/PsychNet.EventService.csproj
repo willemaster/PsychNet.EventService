@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -111,7 +112,7 @@
     </Reference>
     <Reference Include="PsychNet.Domain, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\PsychNet.Domain.1.0.0.67\lib\net45\PsychNet.Domain.dll</HintPath>
+      <HintPath>..\packages\PsychNet.Domain.1.0.0.68\lib\net45\PsychNet.Domain.dll</HintPath>
     </Reference>
     <Reference Include="PsychNet.Notifier, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

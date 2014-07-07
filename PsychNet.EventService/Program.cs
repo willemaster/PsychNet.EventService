@@ -35,6 +35,8 @@ namespace PsychNet.EventService
 
         static void Main(string[] args)
         {
+            int a = 1, b =2;
+
             container = new WindsorContainer();
             RegisterComponents();
 
