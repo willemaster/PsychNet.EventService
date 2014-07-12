@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>PsychNet.Notifier</id>
-    <version>1.0.0.67</version>
+    <version>1.0.0.73</version>
     <title>PsychNet.Notifier</title>
     <authors>Administrator</authors>
     <owners>Administrator</owners>

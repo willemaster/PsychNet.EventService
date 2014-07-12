@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>PsychNet.Utilities</id>
-    <version>1.0.0.67</version>
-    <title>PsychNet.Utilities</title>
+    <id>PsychNet.Core</id>
+    <version>1.0.0.73</version>
+    <title>PsychNet.Core</title>
     <authors>Administrator</authors>
     <owners>Administrator</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
