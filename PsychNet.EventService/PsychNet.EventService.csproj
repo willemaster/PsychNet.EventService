@@ -103,28 +103,28 @@
       <HintPath>..\packages\NServiceKit.Text.1.0.10\lib\net35\NServiceKit.Text.dll</HintPath>
     </Reference>
     <Reference Include="PsychNet.Core">
-      <HintPath>..\packages\PsychNet.Core.1.0.0.73\lib\net45\PsychNet.Core.dll</HintPath>
+      <HintPath>..\..\PsychNet.BE\PsychNet.Core\bin\Debug\PsychNet.Core.dll</HintPath>
     </Reference>
     <Reference Include="PsychNet.CQRS">
-      <HintPath>..\packages\PsychNet.CQRS.1.0.0.73\lib\net45\PsychNet.CQRS.dll</HintPath>
+      <HintPath>..\..\PsychNet.BE\SimpleCQRS\bin\Debug\PsychNet.CQRS.dll</HintPath>
     </Reference>
     <Reference Include="PsychNet.Domain">
-      <HintPath>..\packages\PsychNet.Domain.1.0.0.73\lib\net45\PsychNet.Domain.dll</HintPath>
+      <HintPath>..\..\PsychNet.BE\PsychNet.Domain\bin\Debug\PsychNet.Domain.dll</HintPath>
     </Reference>
     <Reference Include="PsychNet.Notifier">
-      <HintPath>..\packages\PsychNet.Notifier.1.0.0.73\lib\net45\PsychNet.Notifier.dll</HintPath>
+      <HintPath>..\..\PsychNet.BE\PsychNet.Notifier\bin\Debug\PsychNet.Notifier.dll</HintPath>
     </Reference>
     <Reference Include="PsychNet.Utilities">
-      <HintPath>..\packages\PsychNet.Utilities.1.0.0.73\lib\net45\PsychNet.Utilities.dll</HintPath>
+      <HintPath>..\..\PsychNet.BE\PsychNet.Utilities\bin\Debug\PsychNet.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="RazorEngine">
-      <HintPath>..\packages\RazorEngine.3.4.1\lib\net45\RazorEngine.dll</HintPath>
+      <HintPath>..\..\PsychNet.BE\PsychNet.Notifier\bin\Debug\RazorEngine.dll</HintPath>
     </Reference>
     <Reference Include="RestSharp">
       <HintPath>..\packages\RestSharp.104.4.0\lib\net4\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="SetsterApiClient">
-      <HintPath>..\packages\SetsterApiClient.1.0.0.53\lib\net45\SetsterApiClient.dll</HintPath>
+      <HintPath>..\..\..\..\Users\Administrator\Documents\GitHub\CSharpster\SetsterApiClient\bin\Debug\SetsterApiClient.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />

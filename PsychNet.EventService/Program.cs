@@ -196,7 +196,7 @@ namespace PsychNet.EventService
 
             _allAqs = new[] {reminderNotificationAq, cacheMaintenanceAq };
 
-            _timer = new Timer(_ => OnCallBack(), null, 0, 1000*30);
+            _timer = new Timer(_ => OnCallBack(), null, 0, 1000*120);
         }
 
         public void Stop()
